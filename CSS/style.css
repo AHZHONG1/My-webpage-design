@@ -1,0 +1,44 @@
+﻿* {
+    /*border-style: solid;*/
+}
+
+body {}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#menu_icon {
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    width: 25px;
+}
+
+#icon_upper {}
+
+#icon_middle {}
+
+#icon_lower {}
+
+#Title {
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+}
+
+#Title h1 {
+    font-size: 2rem;
+}
+
+#Login_icon {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
