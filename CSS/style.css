@@ -1,14 +1,19 @@
 ﻿* {
-    /*border-style: solid;*/
+   /*border-style: solid;*/
 }
 
-body {}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
 
 .header {
     display: flex;
     justify-content: space-between;
-    height: 100px;
-
+    height: 50px;
+    background: brown;
 }
 
 #menu_icon {
@@ -29,10 +34,12 @@ body {}
     text-align: center;
     width: 50vw;
     margin: auto;
+    color: white;
+    
 }
 
 #Title h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #Login_icon {
@@ -46,13 +53,13 @@ body {}
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .main {
     height: 500px;
     position: relative;
-    
+    background: green;
 }
 
 #main_button {
@@ -69,16 +76,18 @@ button {
     width: 200px;
     text-align: center;
     border-radius: 25px;
-    border: 2px solid green;
+    border: 2px solid blue;
     margin: 20px 10px;
     padding: 15px;
     background: transparent;
     position: relative;
     overflow: hidden;
+    color: white;
+    cursor: pointer;
 }
 
 button span {
-    background: green;
+    background: blue;
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -95,4 +104,126 @@ button:hover span {
 
 button:hover {
     border: none;
+}
+
+.toAbout_us {
+    height: 500px;
+    background: yellow;
+    position: relative;
+}
+
+#About_us_title {
+    width: 40%;
+    height: 50%;
+    border: solid 2px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    /*transform:translate(-10%, -10%);*/
+}
+
+#About_us_description {
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    border: solid 2px;
+    /*transform: translate(-10%, -10%);*/
+}
+
+#toAbout_us_button {
+    position: absolute;
+    top: 70%;
+    left: 22.5%;
+    transform:translateX(-50%);
+}
+
+.toGallery {
+    
+    height: 500px;
+    background: brown;
+    position: relative;
+}
+
+#Gallery_title {
+    position: absolute;
+
+    border: solid 2px;
+
+    width: 60%;
+    height: 30%;
+    top: 10%;
+    left: 5%;
+}
+
+#Gallery_description {
+    position: absolute;
+    border: solid 2px;
+    width: 60%;
+    height: 30%;
+    top: 50%;
+    left: 5%;
+}
+
+#toGallery_button {
+    position: absolute;
+    top: 65%;
+    left: 82.5%;
+    transform: translate(-50%, -50%);
+}
+
+.toCreateAccount {
+    height: 500px;
+    background: orange;
+    position: relative;
+}
+
+#CreateAccount_description {
+    position: absolute;
+    border: solid 2px;
+    width: 90%;
+    height: 50%;
+    top: 10%;
+    left: 5%;
+}
+
+#CreateAccount_directionMessage {
+    position: absolute;
+    border: solid 2px;
+    width: 60%;
+    height: 20%;
+    top: 70%;
+    left: 5%;
+}
+
+#toCreateAccount_button {
+    position: absolute;
+    top: 80%;
+    left: 82.5%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    position: relative;
+    /*height: 200px;*/
+    background: red;
+    
+}
+
+#footer_title {
+    margin-top: 0;
+    text-align: center;
+}
+
+.footer_list {
+    
+}
+
+#footer_copyright {
+    color: white;
+    text-align: right;
+    margin-bottom: 0;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
