@@ -1,12 +1,11 @@
 ﻿* {
-   /*border-style: solid;*/
+    /*border-style: solid;*/
 }
 
 body {
     margin: 0;
     padding: 0;
     border: 0;
-
 }
 
 .header {
@@ -24,11 +23,14 @@ body {
     width: 25px;
 }
 
-#icon_upper {}
+#icon_upper {
+}
 
-#icon_middle {}
+#icon_middle {
+}
 
-#icon_lower {}
+#icon_lower {
+}
 
 #Title {
     text-align: center;
@@ -37,9 +39,9 @@ body {
     color: #FCF6F5FF;
 }
 
-#Title h1 {
-    font-size: 1.5rem;
-}
+    #Title h1 {
+        font-size: 1.5rem;
+    }
 
 #Login_icon {
     margin-left: auto;
@@ -58,7 +60,7 @@ a {
 .main {
     height: 500px;
     position: relative;
-    background: green;
+    background-color: green;
 }
 
 #main_button {
@@ -68,7 +70,7 @@ a {
     transform: translate(-50%, -50%);
     width: 75%;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
 
 button {
@@ -97,23 +99,21 @@ button {
         transition: width 0.5s;
     }
 
-button:hover span {
-    width: 100%;
-}
+    button:hover span {
+        width: 100%;
+    }
 
-button:hover {
-    border: none;
-}
+    button:hover {
+        border: none;
+    }
 
 .toAbout_us {
     height: 500px;
-    background: yellow;
+    background-image: url("../images/programming.jpg");
+    background-size: 100%;
+    background-position: center;
     position: relative;
-<<<<<<< HEAD
     color: springgreen;
-=======
-    color: gray;
->>>>>>> 50bbd63073fc02f7aa48c57948dbbb09b4673cbd
 }
 
 #About_us_title {
@@ -123,12 +123,6 @@ button:hover {
     top: 10%;
     left: 5%;
     text-align: center;
-<<<<<<< HEAD
-    
-=======
-    text-transform: 
-    /*transform:translate(-10%, -10%);*/
->>>>>>> 50bbd63073fc02f7aa48c57948dbbb09b4673cbd
 }
 
 #About_us_description {
@@ -145,21 +139,21 @@ button:hover {
     position: absolute;
     top: 70%;
     left: 22.5%;
-    transform:translateX(-50%);
-    color: gray;
+    transform: translateX(-50%);
+    color: springgreen;
 }
 
 .toGallery {
-    color: gray;
+    color: darkred;
     height: 500px;
-    background: brown;
+    background-image: url("../images/snow.jpg");
+    background-position: center;
     position: relative;
 }
 
 #Gallery_title {
     position: absolute;
     text-align: center;
-
     width: 60%;
     height: 30%;
     top: 10%;
@@ -180,16 +174,19 @@ button:hover {
     top: 65%;
     left: 82.5%;
     transform: translate(-50%, -50%);
+    color: darkred;
 }
 
 .toCreateAccount {
     height: 500px;
-    background: orange;
+    background-image: url("../images/information.jpg");
+    background-size: 100%;
+    background-position: center;
     position: relative;
+    color: white;
 }
 
 #CreateAccount_description {
-    color: gray;
     position: absolute;
     text-align: center;
     width: 90%;
@@ -200,7 +197,6 @@ button:hover {
 
 #CreateAccount_directionMessage {
     position: absolute;
-    color: gray;
     text-align: center;
     width: 60%;
     height: 20%;
@@ -226,9 +222,9 @@ button:hover {
     text-align: center;
 }
 
-.footer_list ul li{
+.footer_list ul li {
     color: white;
-    list-style-type:circle;
+    list-style-type: circle;
 }
 
 #footer_copyright {
