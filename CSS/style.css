@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     height: 50px;
-    background: brown;
+    background: #990011FF;
 }
 
 #menu_icon {
@@ -34,8 +34,7 @@ body {
     text-align: center;
     width: 50vw;
     margin: auto;
-    color: white;
-    
+    color: #FCF6F5FF;
 }
 
 #Title h1 {
@@ -53,7 +52,7 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #FCF6F5FF;
 }
 
 .main {
@@ -76,7 +75,7 @@ button {
     width: 200px;
     text-align: center;
     border-radius: 25px;
-    border: 2px solid blue;
+    border: 2px solid #8AAAE5;
     margin: 20px 10px;
     padding: 15px;
     background: transparent;
@@ -86,17 +85,17 @@ button {
     cursor: pointer;
 }
 
-button span {
-    background: blue;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: width 0.5s;
-}
+    button span {
+        background: #8AAAE5;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: width 0.5s;
+    }
 
 button:hover span {
     width: 100%;
@@ -110,15 +109,17 @@ button:hover {
     height: 500px;
     background: yellow;
     position: relative;
+    color: gray;
 }
 
 #About_us_title {
     width: 40%;
     height: 50%;
-    border: solid 2px;
     position: absolute;
     top: 10%;
     left: 5%;
+    text-align: center;
+    text-transform: 
     /*transform:translate(-10%, -10%);*/
 }
 
@@ -128,7 +129,7 @@ button:hover {
     position: absolute;
     top: 10%;
     right: 5%;
-    border: solid 2px;
+    text-align: center;
     /*transform: translate(-10%, -10%);*/
 }
 
@@ -137,10 +138,11 @@ button:hover {
     top: 70%;
     left: 22.5%;
     transform:translateX(-50%);
+    color: gray;
 }
 
 .toGallery {
-    
+    color: gray;
     height: 500px;
     background: brown;
     position: relative;
@@ -148,8 +150,7 @@ button:hover {
 
 #Gallery_title {
     position: absolute;
-
-    border: solid 2px;
+    text-align: center;
 
     width: 60%;
     height: 30%;
@@ -159,7 +160,7 @@ button:hover {
 
 #Gallery_description {
     position: absolute;
-    border: solid 2px;
+    text-align: center;
     width: 60%;
     height: 30%;
     top: 50%;
@@ -180,8 +181,9 @@ button:hover {
 }
 
 #CreateAccount_description {
+    color: gray;
     position: absolute;
-    border: solid 2px;
+    text-align: center;
     width: 90%;
     height: 50%;
     top: 10%;
@@ -190,7 +192,8 @@ button:hover {
 
 #CreateAccount_directionMessage {
     position: absolute;
-    border: solid 2px;
+    color: gray;
+    text-align: center;
     width: 60%;
     height: 20%;
     top: 70%;
@@ -206,18 +209,18 @@ button:hover {
 
 .footer {
     position: relative;
-    /*height: 200px;*/
-    background: red;
-    
+    background: #990011FF;
 }
 
 #footer_title {
+    color: gray;
     margin-top: 0;
     text-align: center;
 }
 
-.footer_list {
-    
+.footer_list ul li{
+    color: white;
+    list-style-type:circle;
 }
 
 #footer_copyright {
