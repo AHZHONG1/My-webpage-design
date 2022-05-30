@@ -9,12 +9,15 @@ body {
 }
 
 .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     height: 50px;
     background: #990011FF;
 }
 
+
+/*about_us.html*/
 #menu_icon {
     margin-left: 10px;
     margin-top: auto;
@@ -118,7 +121,7 @@ button {
     color: springgreen;
 }
 
-#About_us_title {
+#toAbout_us_title {
     width: 40%;
     height: 50%;
     position: absolute;
@@ -127,7 +130,7 @@ button {
     text-align: center;
 }
 
-#About_us_description {
+#toAbout_us_description {
     width: 40%;
     height: 80%;
     position: absolute;
@@ -153,7 +156,7 @@ button {
     position: relative;
 }
 
-#Gallery_title {
+#toGallery_title {
     position: absolute;
     text-align: center;
     width: 60%;
@@ -162,7 +165,7 @@ button {
     left: 5%;
 }
 
-#Gallery_description {
+#toGallery_description {
     position: absolute;
     text-align: center;
     width: 60%;
@@ -188,7 +191,7 @@ button {
     color: white;
 }
 
-#CreateAccount_description {
+#toCreateAccount_description {
     position: absolute;
     text-align: center;
     width: 90%;
@@ -197,7 +200,7 @@ button {
     left: 5%;
 }
 
-#CreateAccount_directionMessage {
+#toCreateAccount_directionMessage {
     position: absolute;
     text-align: center;
     width: 60%;
@@ -235,4 +238,30 @@ button {
     margin-bottom: 0;
     padding-right: 10px;
     padding-bottom: 10px;
+}
+
+/*about_us.html*/
+#about_us_main {
+    position: relative;
+    height: 2000px;
+    background-color: green;
+}
+
+#about_us_title {
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+    border: solid 2px;
+    width: 90%;
+    height: 10%;
+    text-align: center;
+}
+
+#about_us_description {
+    position: absolute;
+    border: solid 2px;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
 }
