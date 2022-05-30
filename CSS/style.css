@@ -112,7 +112,6 @@ button:hover {
     background-position: center;
     position: relative;
     color: springgreen;
-    
 }
 
 #About_us_title {
@@ -122,6 +121,7 @@ button:hover {
     top: 10%;
     left: 5%;
     text-align: center;
+    
 }
 
 #About_us_description {
