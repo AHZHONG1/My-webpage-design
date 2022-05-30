@@ -60,7 +60,9 @@ a {
 .main {
     height: 500px;
     position: relative;
-    background-color: green;
+    background-image: url("../images/Gaming_learning.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #main_button {
