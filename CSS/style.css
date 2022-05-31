@@ -265,3 +265,10 @@ button {
     width: 90%;
     height: 80%;
 }
+
+/*game.html*/
+#game_main {
+    position: relative;
+    height: 2000px;
+    background-color: green;
+}
