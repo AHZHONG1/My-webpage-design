@@ -373,3 +373,38 @@ button {
     bottom: 0%;
     left: 5%;
 }
+
+/*gallery.html*/
+#gallery_main {
+    position: relative;
+    height: 2000px;
+    background-color: green;
+}
+
+#gallery_title {
+    position: absolute;
+    text-align: center;
+    border: solid 2px;
+    height: 5%;
+    width: 90%;
+    top: 2.5%;
+    left: 5%;
+}
+
+.left {
+    position: absolute;
+    border: solid 2px;
+    width: 42.5%;
+    height: 88%;
+    top: 10%;
+    left: 5%;
+}
+
+.right {
+    position: absolute;
+    border: solid 2px;
+    width: 42.5%;
+    height: 88%;
+    top: 10%;
+    right: 5%;
+}
