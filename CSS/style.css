@@ -408,3 +408,63 @@ button {
     top: 10%;
     right: 5%;
 }
+
+/*login.html*/
+#login_main {
+    position: relative;
+    height: 1000px;
+    background-color: green;
+}
+
+#login_title {
+    position: absolute;
+    text-align:center;
+    border: solid 2px;
+    height: 5%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+}
+
+#login_field {
+    position: absolute;
+    width: 45%;
+    height: 10%;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+}
+
+#error_message {
+    position: absolute;
+    border: solid 2px;
+    width: 30%;
+    height: 2.5%;
+    top:31.25%;
+    left: 5%;
+    visibility: hidden;
+}
+
+#login_button {
+    position: absolute;
+    width: 10%;
+    top: 35%;
+    left: 40%;
+}
+
+#register_title {
+    position: absolute;
+    text-align:center;
+    border: solid 2px;
+    width: 90%;
+    height: 5%;
+    top: 60%;
+    left: 5%;
+}
+
+#createAccount_button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
