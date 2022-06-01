@@ -272,3 +272,30 @@ button {
     height: 2000px;
     background-color: green;
 }
+
+#game_title {
+    position: absolute;
+    border: solid 2px;
+    width: 90%;
+    height: 5%;
+    top: 2.5%;
+    left: 5%;
+}
+
+#game_box {
+    position: absolute;
+    border: solid 2px;
+    width: 90%;
+    height: 80%;
+    top: 10%;
+    left: 5%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.game_box_content {
+    border: solid 2px;
+    width: 30%;
+    height: 10%;
+}
+
