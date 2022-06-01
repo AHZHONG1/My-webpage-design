@@ -1,14 +1,11 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
-    <title>Login</title>
+    <title>AHZHONG Create Account</title>
     <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
-    <script type="text/javascript" src="./JavaScript/script.js"></script>
 </head>
-
 <body>
     <div class="header">
         <div id="menu_icon">
@@ -25,20 +22,19 @@
         </div>
     </div>
 
-    <div id="login_main">
-        <h1 id="login_title">Login page</h1>
-        <form action="./PHP/connectDatabase.php" method="post">
-            <fieldset id="login_field">
-                <legend>Login</legend>
+    <div id="createAccount_main">
+        <h1 id="createAccount_title">Create Account</h1>
+        <form action="./PHP/insertDatabase.php" method="post">
+            <fieldset id="createAccount_field">
+                <legend>Create Account</legend>
                 Username:<input type="text" name="username" required="required" /><br />
                 <br />
-                Password:<input type="password" name="password" required="required" />
+                Password:<input type="password" name="password" required="required" /><br />
+                <br />
+                Please type your password again:<input type="password" name="passwordAgain" required="required" />
             </fieldset>
-            <input type="submit" value="Login" id="login_button" />
+            <input type="submit" value="Create Account" id="create_button" />
         </form>
-
-        <h2 id="register_title">If you do not have an account, click the button below to create account</h2>
-        <button type="button" id="createAccount_button" onclick="openwindow('createAccount.html')"><span></span>Create account</button>
     </div>
 
     <div class="footer">
@@ -56,5 +52,4 @@
     </div>
 
 </body>
-
 </html>
