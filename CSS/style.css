@@ -26,14 +26,11 @@ body {
     width: 25px;
 }
 
-#icon_upper {
-}
+#icon_upper {}
 
-#icon_middle {
-}
+#icon_middle {}
 
-#icon_lower {
-}
+#icon_lower {}
 
 #Title {
     text-align: center;
@@ -42,9 +39,9 @@ body {
     color: #FCF6F5FF;
 }
 
-    #Title h1 {
-        font-size: 1.5rem;
-    }
+#Title h1 {
+    font-size: 1.5rem;
+}
 
 #Login_icon {
     margin-left: auto;
@@ -63,7 +60,7 @@ a {
 .main {
     height: 500px;
     position: relative;
-    background-image: url("../images/Gaming_learning.png");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/gaming_learning.png");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -92,29 +89,29 @@ button {
     cursor: pointer;
 }
 
-    button span {
-        background: #8AAAE5;
-        height: 100%;
-        width: 0;
-        border-radius: 25px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: -1;
-        transition: width 0.5s;
-    }
+button span {
+    background: #8AAAE5;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.5s;
+}
 
-    button:hover span {
-        width: 100%;
-    }
+button:hover span {
+    width: 100%;
+}
 
-    button:hover {
-        border: none;
-    }
+button:hover {
+    border: none;
+}
 
 .toAbout_us {
     height: 500px;
-    background-image: url("../images/programming.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/programming.jpg");
     background-size: 100%;
     background-position: center;
     position: relative;
@@ -151,7 +148,7 @@ button {
 .toGallery {
     color: darkred;
     height: 500px;
-    background-image: url("../images/snow.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/snow.jpg");
     background-position: center;
     position: relative;
 }
@@ -184,7 +181,7 @@ button {
 
 .toCreateAccount {
     height: 500px;
-    background-image: url("../images/information.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/information.jpg");
     background-size: 100%;
     background-position: center;
     position: relative;
@@ -291,7 +288,7 @@ button {
     top: 10%;
     left: 5%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .game_box_content {
@@ -310,7 +307,7 @@ button {
 #learn_title {
     position: absolute;
     border: solid 2px;
-    text-align:center;
+    text-align: center;
     height: 5%;
     width: 90%;
     top: 2.5%;
@@ -321,7 +318,7 @@ button {
     position: absolute;
     border: solid 2px;
     height: 85%;
-    width:90%;
+    width: 90%;
     top: 10%;
     left: 5%;
 }
@@ -418,7 +415,7 @@ button {
 
 #login_title {
     position: absolute;
-    text-align:center;
+    text-align: center;
     border: solid 2px;
     height: 5%;
     width: 90%;
@@ -440,7 +437,7 @@ button {
     border: solid 2px;
     width: 30%;
     height: 2.5%;
-    top:31.25%;
+    top: 31.25%;
     left: 5%;
     visibility: hidden;
 }
@@ -454,7 +451,7 @@ button {
 
 #register_title {
     position: absolute;
-    text-align:center;
+    text-align: center;
     border: solid 2px;
     width: 90%;
     height: 5%;
