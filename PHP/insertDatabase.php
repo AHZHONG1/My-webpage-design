@@ -33,7 +33,7 @@ if ($conn->query($sql) === FALSE) {
   echo "Error creating table: " . $conn->error;
 }
 if ($_POST["password"] == $_POST["passwordAgain"]) {
-	$sql = "INSERT INTO User (username, password) VALUES ('$_POST["username"]', '$_POST["password"]')";
+	$sql = "INSERT INTO User (username, password) VALUES ('" . $_POST["username"] . "', '" . $_POST["password"] . "')";
 
 	if ($conn->query($sql) === TRUE) {
 		echo '<script>alert("Account created")</script>';
