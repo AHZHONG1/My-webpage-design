@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\images",
     "\\PHP"
   ],
-  "SelectedNode": "\\PHP",
+  "SelectedNode": "\\PHP\\insertDatabase.php",
   "PreviewInSolutionExplorer": false
 }
