@@ -30,12 +30,13 @@ email VARCHAR(50)
 )";
 
 if ($conn->query($sql) === FALSE) {
-  echo "Error creating table: " . $conn->error;
+	//Error
 }
 if ($_POST["password"] == $_POST["passwordAgain"]) {
 	$sql = "INSERT INTO User (username, password) VALUES ('" . $_POST["username"] . "', '" . $_POST["password"] . "')";
 
 	if ($conn->query($sql) === TRUE) {
+		echo '<a href="../login.html">Return to login page</a>';
 		echo '<script>alert("Account created")</script>';
 	}
 } else {
