@@ -44,6 +44,7 @@ if ($conn->query($sql) === FALSE) {
 $sql = "SELECT username, password FROM User";
 
 $result = $conn->query($sql);
+$match = FALSE;
 
 if ($result->num_rows > 0) {
 	while ($row = $result->fetch_assoc()) {
@@ -51,15 +52,22 @@ if ($result->num_rows > 0) {
 		$Dpassword = $row["password"];
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if ($_POST["username"] == $Dusername && $_POST["password"] == $Dpassword) {
+				$match = TRUE;
 				echo '<h1>You have login</h1>';
 				echo '<script>alert("You have login")</script>';
+				break;
 			} else {
-				echo '<h1>Wrong username or password</h1>';
-				echo '<a href="../login.html">Return to login page</a>';
+				continue;
+				
 			}
 			
 		}
 	}
+	if ($match == FALSE) {
+		echo '<h1>Wrong username or password</h1>';
+		echo '<a href="../login.html">Return to login page</a>';
+	}
+
 } else {
 	echo '<h1>Something went wrong</h1>';
 	echo '<a href="../login.html">Return to login page</a>';

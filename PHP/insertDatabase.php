@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
 <?php
 
 $servername = "localhost";
@@ -41,6 +49,8 @@ if ($_POST["password"] == $_POST["passwordAgain"]) {
 	}
 } else {
 	echo '<script>alert("Something went wrong")</script>';
+	echo '<h1>The password is not the same</h1>';
+	echo '<a href="../createAccount.html">Please create again</a>';
 }
 
 $conn->close();
@@ -49,3 +59,7 @@ $conn->close();
 
 
 ?>
+
+</body>
+
+</html>
