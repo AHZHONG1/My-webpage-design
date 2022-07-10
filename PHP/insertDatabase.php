@@ -8,27 +8,7 @@
 
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-
-$conn = new mysqli($servername, $username, $password);
-if ($conn->connect_error) {
-	die("Connection failed: " . $conn->Connect_error);
-}
-$sql = "CREATE DATABASE website";
-
-if ($conn->query($sql) === TRUE) {
-  
-}
-
-$dbname = "website";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-	die("Connection failed: " . $conn->conect_error);
-}
+include 'connectDatabase.php';
 
 $sql = "CREATE TABLE User(
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
