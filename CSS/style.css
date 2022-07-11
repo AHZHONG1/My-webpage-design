@@ -503,3 +503,60 @@ button:hover {
     top: 35%;
     left: 40%;
 }
+
+/*loginIndex.php*/
+
+.loginIndex_header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background: #990011FF;
+}
+
+#userPhoto {
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 2px solid black;
+}
+
+#userPhoto:hover {
+    cursor: pointer;
+}
+
+#Title {
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    color: #FCF6F5FF;
+}
+
+#Logout_icon {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.userPhotoOnClick {
+    position: absolute;
+    width: 50%;
+    height: 150px;
+    top: 50px;
+    left: 0;
+    z-index: 3;
+    background: #990011FF;
+    visibility: hidden;
+}
+
+
+/*verifyEmail.php*/
+
+#verifyEmail_main {
+    position: relative;
+    height: 1000px;
+    background-color: green;
+}
+
