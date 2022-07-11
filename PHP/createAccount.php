@@ -7,7 +7,6 @@
 <body>
 
 <?php
-
 include 'connectDatabase.php';
 
 $sql = "CREATE TABLE User(
@@ -34,12 +33,7 @@ if ($_POST["password"] == $_POST["passwordAgain"]) {
 }
 
 $conn->close();
-
-
-
-
 ?>
 
 </body>
-
 </html>

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,8 +36,11 @@ if ($result->num_rows > 0) {
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if ($_POST["username"] == $Dusername && $_POST["password"] == $Dpassword) {
 				$match = TRUE;
+				$_SESSION['loggedin'] = true;
+				$_SESSION['username'] = $Dusername;
 				echo '<h1>You have login</h1>';
 				echo '<script>alert("You have login")</script>';
+				header('Location: ' .'loginIndex.php');
 				break;
 			} else {
 				continue;
@@ -45,6 +52,7 @@ if ($result->num_rows > 0) {
 	if ($match == FALSE) {
 		echo '<h1>Wrong username or password</h1>';
 		echo '<a href="../login.html">Return to login page</a>';
+		$_SESSION['loggedin'] = false;
 	}
 
 } else {
@@ -53,6 +61,7 @@ if ($result->num_rows > 0) {
 	echo '<h1>Please create an account first</h1>';
 	echo '<a href="../login.html">Return to login page</a>';
 	echo '<script>alert("Something went wrong")</script>';
+	$_SESSION['loggedin'] = false;
 }
 
 $conn->close();
