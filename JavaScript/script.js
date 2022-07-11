@@ -6,8 +6,8 @@ function openwindow(link) {
     window.open(link, "_self");
 }
 
-function openMenu() {
-    var menu = document.getElementsByClassName('menu');
+function openMenu(ID) {
+    var menu = document.getElementsByClassName(ID);
     if (isMenuOpened == false) {
         isMenuOpened = true;
         //Open menu
