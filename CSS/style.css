@@ -518,10 +518,11 @@ button:hover {
     margin-top: 5px;
     margin-left: 10px;
     border: 2px solid black;
+    cursor: pointer;
 }
 
 #userPhoto:hover {
-    cursor: pointer;
+    
 }
 
 #Title {
@@ -551,9 +552,31 @@ button:hover {
     visibility: hidden;
 }
 
+#userPhotoBig {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 25px;
+    left: 20px;
+    border: 2px solid black;
+}
+
+#changePhotoButton {
+    position: absolute;
+    top: 90px;
+    left: 150px;
+    color: white;
+    cursor: pointer;
+}
+
+#userPhotoList {
+    position: absolute;
+    left: 400px;
+    list-style: none;
+}
+
 
 /*verifyEmail.php*/
-
 #verifyEmail_main {
     position: relative;
     height: 1000px;
