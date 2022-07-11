@@ -5,7 +5,18 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+    function alertWrongPassword() {
+        alert("Your username or password is wrong!");
+        window.location.replace("../login.html");
+    }
 
+	function alertNoUserInfo() {
+		alert("Something went wrong!\nNo user account has been created\nPlease create an account first!");
+        window.location.replace("../login.html");
+	}
+
+</script>
 </head>
 
 <body>
@@ -50,18 +61,17 @@ if ($result->num_rows > 0) {
 		}
 	}
 	if ($match == FALSE) {
-		echo '<h1>Wrong username or password</h1>';
-		echo '<a href="../login.html">Return to login page</a>';
 		$_SESSION['loggedin'] = false;
+		echo '<script type="text/javascript">',
+		'alertWrongPassword();',
+		'</script>';
 	}
 
 } else {
-	echo '<h1>Something went wrong</h1>';
-	echo '<h1>No user account has been created</h1>';
-	echo '<h1>Please create an account first</h1>';
-	echo '<a href="../login.html">Return to login page</a>';
-	echo '<script>alert("Something went wrong")</script>';
 	$_SESSION['loggedin'] = false;
+	echo '<script type="text/javascript">',
+		'alertNoUserInfo();',
+		'</script>';
 }
 
 $conn->close();

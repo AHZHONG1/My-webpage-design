@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+    function alertWrongPassword() {
+        alert("The password is not the same!\nPlease type again!");
+        window.location.replace("../createAccount.html");
+    }
 
+	function alertCreateAccountSuccessfully() {
+		alert("Account has been created successfully!");
+        window.location.replace("../login.html");
+	}
+
+</script>
 </head>
 
 <body>
@@ -20,16 +31,18 @@ if ($conn->query($sql) === FALSE) {
 	//Error
 }
 if ($_POST["password"] == $_POST["passwordAgain"]) {
+
 	$sql = "INSERT INTO User (username, password) VALUES ('" . $_POST["username"] . "', '" . $_POST["password"] . "')";
 
 	if ($conn->query($sql) === TRUE) {
-		echo '<a href="../login.html">Return to login page</a>';
-		echo '<script>alert("Account created")</script>';
+		echo '<script type="text/javascript">',
+		'alertCreateAccountSuccessfully();',
+		'</script>';
 	}
 } else {
-	echo '<script>alert("Something went wrong")</script>';
-	echo '<h1>The password is not the same</h1>';
-	echo '<a href="../createAccount.html">Please create again</a>';
+	echo '<script type="text/javascript">',
+		'alertWrongPassword();',
+		'</script>';
 }
 
 $conn->close();

@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<script>
+    function alertConnectionError() {
+        alert("There is an error when connecting to database!");
+        window.location.replace("../login.html");
+    }
+</script>
 </head>
 
 <body>
@@ -13,7 +18,9 @@
 
 	$conn = new mysqli($servername, $username, $password);
 	if ($conn->connect_error) {
-		die("Connection failed: " . $conn->Connect_error);
+		echo '<script type="text/javascript">',
+		'alertConnectionError();',
+		'</script>';
 	}
 	$sql = "CREATE DATABASE website";
 
