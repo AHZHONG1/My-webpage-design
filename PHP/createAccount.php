@@ -24,7 +24,8 @@ $sql = "CREATE TABLE User(
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 username VARCHAR(30) NOT NULL,
 password VARCHAR(30) NOT NULL,
-email VARCHAR(50)
+email VARCHAR(50),
+userPhoto BLOB
 )";
 
 if ($conn->query($sql) === FALSE) {

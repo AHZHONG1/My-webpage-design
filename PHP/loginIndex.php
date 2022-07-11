@@ -23,12 +23,26 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
      'alertLogin();',
      '</script>';    
 }
+include 'connectDatabase.php';
+
+$username = $_SESSION['username']
+
 ?>
 
 <div class="loginIndex_header">
   <div id="account_icon" onclick="openMenu('userPhotoOnClick')">
-    <img id="userPhoto" src="../images/DefaultUserPhoto.png" width="40" height="40">
-  </div>
+  <?php
+  
+
+  $sql = "SELECT userPhoto FROM User WHERE username='".$username."'";
+  $result = $conn->query($sql);
+  $row = $result->fetch_assoc();
+    if ($row['userPhoto'] == NULL) {
+        echo '<img id="userPhoto" src="../images/DefaultUserPhoto.png" width="40" height="40">';
+    }
+  ?>
+    
+ </div>
 
   <!--<div id="menu_icon" onclick="openMenu()">
     <hr id="icon_upper" />
@@ -45,13 +59,24 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
 </div>
 
 <div class="userPhotoOnClick">
-  <ul>
-     <li><a href="index.html">Main</a></li>
-     <li><a href="game.html">Gaming</a></li>
-     <li><a href="learn.html">Learning</a></li>
-     <li><a href="about_us.html">About us</a></li>
-     <li><a href="gallery.html">Gallery</a></li>
-     <li><a href="login.html">Create an account</a></li>
+
+<?php
+  
+
+  $sql = "SELECT userPhoto FROM User WHERE username='".$username."'";
+  $result = $conn->query($sql);
+  $row = $result->fetch_assoc();
+    if ($row['userPhoto'] == NULL) {
+        echo '<img id="userPhotoBig" src="../images/DefaultUserPhoto.png">';
+    }
+    $conn->close();
+  ?>
+   <p id="changePhotoButton">Change user photo</p>
+
+
+  <ul id="userPhotoList">
+     <li><a href="">Go to Setting</a></li>
+     
    </ul>
 </div>
 
