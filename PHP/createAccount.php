@@ -12,6 +12,11 @@
         window.location.replace("../login.html");
 	}
 
+	function alertSameUsername() {
+		alert("This username has been used in other account\nPlease use another username!");
+		window.location.replace("../createAccount.html");
+	}
+
 </script>
 </head>
 
@@ -31,7 +36,26 @@ userPhoto BLOB
 if ($conn->query($sql) === FALSE) {
 	//Error
 }
-if ($_POST["password"] == $_POST["passwordAgain"]) {
+
+$sql = "SELECT username FROM User";
+
+$result = $conn->query($sql);
+
+$duplicate = FALSE;
+
+if ($result->num_rows > 0) {
+	while ($row = $result->fetch_assoc()) {
+		if ($row["username"] == $_POST["username"]) {
+			$duplicate = TRUE;
+			echo '<script type="text/javascript">',
+			'alertSameUsername();',
+			'</script>';
+			break;
+		}
+	}
+}
+
+if ($_POST["password"] == $_POST["passwordAgain"] && $duplicate == FALSE) {
 
 	$sql = "INSERT INTO User (username, password) VALUES ('" . $_POST["username"] . "', '" . $_POST["password"] . "')";
 
