@@ -42,7 +42,15 @@ $username = $_SESSION['username']
     }
   ?>
     
- </div>
+    </div>
+
+    <div id="welcome_header">
+    <?php
+        echo '<p>Welcome, '. $username.'!</p>'
+    ?>
+    
+
+    </div>
 
   <!--<div id="menu_icon" onclick="openMenu()">
     <hr id="icon_upper" />
