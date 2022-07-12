@@ -514,6 +514,10 @@ button:hover {
     background: #990011FF;
 }
 
+#account_icon {
+    width: 25vw;
+}
+
 #userPhoto {
     margin-top: 5px;
     margin-left: 10px;
@@ -521,15 +525,12 @@ button:hover {
     cursor: pointer;
 }
 
-#userPhoto:hover {
-    
-}
-
-#Title {
+#welcome_header {
     text-align: center;
     width: 50vw;
-    margin: auto;
+    margin-top: -25px;
     color: #FCF6F5FF;
+    font-size: 2rem;
 }
 
 #Logout_icon {
@@ -537,8 +538,9 @@ button:hover {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 10px;
-    text-align: center;
+    text-align: right;
     font-size: 1rem;
+    width: 25vw;
 }
 
 .userPhotoOnClick {
@@ -548,7 +550,7 @@ button:hover {
     top: 50px;
     left: 0;
     z-index: 3;
-    background: #990011FF;
+    background: #990011cc;
     visibility: hidden;
 }
 
